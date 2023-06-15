@@ -6,7 +6,7 @@ fun main(){
     var minute = 7
     hour = 10
     minute = 55
-    println(earOfFlight)
+    //println(earOfFlight)
     //println(hour)
     //println(minute)
     print(hour)
