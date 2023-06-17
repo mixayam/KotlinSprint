@@ -8,4 +8,5 @@ fun main(){
     val markOfStud4: Float = 5f
     val arithmetic = (markOfStud1 + markOfStud2 + markOfStud3 + markOfStud4) / numOfStud
     println(arithmetic)
+
 }
