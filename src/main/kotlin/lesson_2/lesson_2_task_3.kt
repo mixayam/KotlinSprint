@@ -6,12 +6,19 @@ fun main(){
     val departureTimeMins = 39 //минуты отправления
     val tripTimeMinsSum = 457 //сумма минут в пути
     val tripTimeHours = tripTimeMinsSum / 60 //часы в пути
-    val tripTimeMins = tripTimeMinsSum - (tripTimeHours * 60) //минуты в пути
-    val arrivalTimeMins = (departureTimeMins + tripTimeMins) - 60 //минуты прибытия
-    val arrivalTimeHours = departureTimeHours + tripTimeHours + 1 //часы прибытия
+    val arrivalTimeMinsSum  = departureTimeMins + tripTimeMinsSum
+    val arrivalTimeHours = departureTimeHours + tripTimeHours
+    val arrivalTimeMins = arrivalTimeMinsSum % 60
 
-    println(arrivalTimeHours)
-    println(arrivalTimeMins)
+
+    /*val tripTimeMins = tripTimeMinsSum - (tripTimeHours * 60) //минуты в пути
+    val arrivalTimeMins = (departureTimeMins + tripTimeMins) - 60 //минуты прибытия
+    val arrivalTimeHours = departureTimeHours + tripTimeHours + 1 //часы прибытия*/
+
+
+
+    println("$arrivalTimeHours:$arrivalTimeMins")
+    //println(arrivalTimeMins)
 
 
     //Способ 2, подходит для любых значений времени
@@ -19,6 +26,5 @@ fun main(){
         arrivalTimeMins = (departureTimeMins + tripTimeMins) - 60
         val arrivalTimeHours = departureTimeHours + tripTimeHours + 1
     }
-    println(arrivalTimeHours)
-    println(arrivalTimeMins)*/
+     println("$arrivalTimeHours:$arrivalTimeMins")*/
 }
