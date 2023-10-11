@@ -2,13 +2,13 @@ package lesson_4
 
 fun main(){
 
-    val reservedForToday = 13
-    val reservedForTomorrow = 9
+    val isFreeToday = 13
+    val isFreeTomorrow = 9
 
-    val resultForToday = !(reservedForToday == NUMBER_OF_TABLES_SUMMARY)
-    //println(resultForToday)
-    val resultForTomorrow = !(reservedForTomorrow == NUMBER_OF_TABLES_SUMMARY)
-    //println(resultForTomorrow)
+    val resultForToday = isFreeToday != NUMBER_OF_TABLES_SUMMARY
+
+    val resultForTomorrow = isFreeTomorrow != NUMBER_OF_TABLES_SUMMARY
+
     println("Доступность столиков на сегодня: $resultForToday  \nДоступность столиков на завтра: $resultForTomorrow")// "Доступность столиков на завтра: $resultForTomorrow" )
 }
 
