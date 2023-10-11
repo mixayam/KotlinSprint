@@ -1,6 +1,6 @@
 package lesson_4
 
-fun main(){
+fun main() {
 
     val isFreeToday = 13
     val isFreeTomorrow = 9
@@ -9,7 +9,6 @@ fun main(){
 
     val resultForTomorrow = isFreeTomorrow != NUMBER_OF_TABLES_SUMMARY
 
-    println("Доступность столиков на сегодня: $resultForToday  \nДоступность столиков на завтра: $resultForTomorrow")// "Доступность столиков на завтра: $resultForTomorrow" )
+    println("Доступность столиков на сегодня: $resultForToday  \nДоступность столиков на завтра: $resultForTomorrow")
 }
-
 const val NUMBER_OF_TABLES_SUMMARY = 13
