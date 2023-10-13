@@ -7,12 +7,12 @@ fun main(){
     var cargoTwoWeight = 50
     var cargoTwoVolume = 100
 
-    //var cargoOneAccordance = (AVERAGE_MIN_WEIGHT <= cargoOneWeight && cargoOneWeight <=AVERAGE_MAX_WEIGHT)&&(cargoOneVolume <= AVERAGE_VOLUME)
+
     print(("Груз весом $cargoOneWeight кг и объемом $cargoOneVolume л соответствует параметру Average: " ))
-    println((AVERAGE_MIN_WEIGHT <= cargoOneWeight && cargoOneWeight <= AVERAGE_MAX_WEIGHT)&&(cargoOneVolume <= AVERAGE_VOLUME))
+    println((AVERAGE_MIN_WEIGHT <= cargoOneWeight && cargoOneWeight <= AVERAGE_MAX_WEIGHT)&&(cargoOneVolume < AVERAGE_VOLUME))
 
     print(("Груз весом $cargoTwoWeight кг и объемом $cargoTwoVolume л соответствует параметру Average: " ))
-    println((AVERAGE_MIN_WEIGHT <= cargoTwoWeight && cargoTwoWeight <= AVERAGE_MAX_WEIGHT)&&(cargoTwoVolume <= AVERAGE_VOLUME))
+    println((AVERAGE_MIN_WEIGHT <= cargoTwoWeight && cargoTwoWeight <= AVERAGE_MAX_WEIGHT)&&(cargoTwoVolume < AVERAGE_VOLUME))
 }
 
 
