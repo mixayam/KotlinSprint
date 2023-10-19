@@ -2,8 +2,11 @@ package lesson_5
 
 fun main (){
 
-    val testNumber = 10
-    val userResult = readLine()!!.toInt()
+    val a = 5
+    val b = 7
+    val testNumber = a + b
+    println("$a + $b = ?")
+    val userResult = readln().toInt()
 
     if (userResult == testNumber){
         println("Добро пожаловать!")
