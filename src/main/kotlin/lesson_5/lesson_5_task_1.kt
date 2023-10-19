@@ -10,7 +10,7 @@ fun main (){
 
     if (userResult == testNumber){
         println("Добро пожаловать!")
-    }else{
+    }else {
         println("Доступ запрещен.")
     }
 }
