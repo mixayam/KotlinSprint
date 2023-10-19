@@ -1,18 +1,19 @@
 package lesson_4
-
 fun main(){
 
     var dayNumber = 5
-    val exercisesHands = (dayNumber%2 != 0)
-    val exercisesLegs = (dayNumber%2 == 0)
-    val exercisesBack = (dayNumber%2 == 0)
-    val exercisesPress = (dayNumber%2 != 0)
+    var parity = dayNumber%2
+
+    val exrcisesHands = (parity != 0)
+    val exercisesPress = exrcisesHands
+    val exercisesLegs = (parity == 0)
+    val exercisesBack = exercisesLegs
 
     println("""
-        "Упражнения для рук:"    $exercisesHands
-        "Упражнения для ног:"    $exercisesLegs
-        "Упражнения для спины:"  $exercisesBack
-        "Упражнения для пресса:" $exercisesPress
+        "Упражнения для рук:    $exrcisesHands
+        "Упражнения для ног:    $exercisesLegs   
+        "Упражнения для спины:  $exercisesBack
+        "Упражнения для пресса: $exercisesPress 
     """.trimIndent())
 
 }
