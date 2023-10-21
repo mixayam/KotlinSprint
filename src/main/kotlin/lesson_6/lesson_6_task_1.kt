@@ -1,29 +1,18 @@
 package lesson_6
 
 fun main() {
-    println("Придумайте логин")
-    var UserLoginNew = readln().toString()
-    println("Придумайте пароль")
-    var UserPasswordNew = readln().toString()
+    do {
+        println("Придумайте логин")
+        val userLoginNew = readln().toString()
+        println("Придумайте пароль")
+        val userPasswordNew = readln().toString()
 
-    println("Логин:")
-    var UserLogin = readln().toString()
-    println("Пароль:")
-    var UserPassword = readln().toString()
+        println("Логин:")
+        val userLogin = readln().toString()
+        println("Пароль:")
+        val userPassword = readln().toString()
+    } while (userLogin != userLoginNew && userPassword != userPasswordNew)
 
-    if (UserLogin != UserLoginNew && UserPassword != UserPasswordNew) {
-        do {
-            println("Придумайте логин")
-            var UserLoginNew = readln().toString()
-            println("Придумайте пароль")
-            var UserPasswordNew = readln().toString()
+    println("Авторизация прошла успешно")
 
-            println("Логин:")
-            var UserLogin = readln().toString()
-            println("Пароль:")
-            var UserPassword = readln().toString()
-        } while (UserLogin == UserLoginNew && UserPassword == UserPasswordNew)
-    } else {
-        println("Авторизация прошла успешно")
-    }
 }
