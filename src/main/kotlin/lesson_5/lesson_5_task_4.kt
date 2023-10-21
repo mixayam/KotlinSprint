@@ -1,6 +1,6 @@
 package lesson_5
 
-fun main(){
+fun main() {
 
     println("Введите имя пользователя")
 
@@ -15,9 +15,10 @@ fun main(){
 
     var enteredPassword = readln().toString()
 
-    if (enteredPassword == PASSWORD){
+    if (enteredPassword == PASSWORD) {
         println("Добро пожаловать!")
     }
 }
-const val USERNAME : String = "Zaphod"
-const val PASSWORD : String = "PanGalactic"
+
+const val USERNAME: String = "Zaphod"
+const val PASSWORD: String = "PanGalactic"
