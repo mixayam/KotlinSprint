@@ -2,25 +2,27 @@ package lesson_5
 
 fun main() {
 
-    var flagOne = 0
-    var flagTwo = 0
     println("Введите число от 0 до 42:")
-    var numberFromUserOne = readln().toInt()
+    val numberFromUserOne = readln().toInt()
 
     println("Введите число от 0 до 42:")
-    var numberFromUserTwo = readln().toInt()
+    val numberFromUserTwo = readln().toInt()
 
-    if (numberFromUserOne == NUMBER_ONE || numberFromUserOne == NUMBER_TWO) {
-        flagOne = +1
-    } else flagOne = 0
+    val isFirstCondition = if (numberFromUserOne == NUMBER_ONE || numberFromUserOne == NUMBER_TWO) {
+        true
+    } else {
+        false
+    }
 
-    if (numberFromUserTwo == NUMBER_ONE || numberFromUserTwo == NUMBER_TWO) {
-        flagTwo = +1
-    } else flagTwo = 0
+    val isSecondCondition = if (numberFromUserTwo == NUMBER_ONE || numberFromUserTwo == NUMBER_TWO) {
+        true
+    } else {
+        false
+    }
 
-    when (flagOne + flagTwo) {
-        1 -> println("Вы выиграли утешительный приз")
-        2 -> println("Вы выиграли главный приз")
+    when {
+        isFirstCondition && isSecondCondition -> println("Вы выиграли главный приз")
+        isFirstCondition || isSecondCondition -> println("Вы выиграли утешительный приз")
         else -> println("Неудача")
     }
 
