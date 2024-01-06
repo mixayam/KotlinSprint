@@ -2,12 +2,9 @@ package lesson_6
 
 fun main() {
     println("Сколько секунд требуется засечь?")
-    val userSeconds = readln().toInt()
-    var counter = userSeconds
+    val userSeconds = readln().toLong()
 
-    do {
-        counter--
-        Thread.sleep(1000)
-    } while (counter > 0)
+    Thread.sleep(userSeconds * 1000)
+
     println("Прошло $userSeconds секунд")
 }
